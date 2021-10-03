@@ -1,6 +1,4 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-- jekyll-remote-theme
+theme: jekyll-theme-hacker
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://stefaniedao.github.io/Lab2/"
