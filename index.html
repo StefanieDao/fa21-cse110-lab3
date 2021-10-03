@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project 1: Building a Webpage</title>
+        <link rel="icon" type="image/png" href="fav.png">
+    </head>
+    <body>
+        <header>
+            <h1>Project 1: Building a Webpage</h1>
+            <ul>
+                <li><b>Location:</b> Garren Auditorium (UCSD)</li>
+                <li><b>Date:</b> October 1, 2021 </li>
+                <li><b>Time:</b> 7 PM - 9 PM</li>
+            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#attendance">Attendace</a></li>
+                    <li><a href="#agenda">Agenda Items</a></li>
+                    <li><a href="#action">Action Items</a></li>
+                    <li><a href="#other">Questions and Other Notes</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="#attendance">
+                <h2> Attendance</h2>
+                <p> Anna, Sebastian, Roxanne, Stefanie, Jaylynn</p>
+            </section>
+
+            <section id="#agenda">
+                <h2> Agenda Items </h2>
+                <ol>
+                    <li> Brainstorm ideas for the webpage </li>
+                    <li> Go over design notes and lectures video </li>
+                        <img src="design-web.jpeg" 
+                             width="400" height="315"
+                             alt="Plan-Design-Build"
+                             title="A flow chart of the process of designing a website">
+
+                        <video controls width="400" height="315">
+                                <source src="html.mp4" 
+                                type="video/mp4">
+
+                            Sorry, your browser doesn't support embedded videos.
+                        </video>
+                            
+                </ol>
+
+            </section>
+
+            <section id="#action">
+                <h2>Action Items</h2>
+                <ol>
+                    <li><strong>Listen to class recording to comprehend requirements</strong></li>
+                        <figure>
+                            <audio
+                                controls
+                                src="audio.mp3">
+                                    Your browser does not support the
+                                    <code>audio</code> element.
+                            </audio>
+                        </figure>
+                    <li>Make a tentative schedule </li>
+                        <ul>
+                            <li>Deadline to finalize idea
+                                <input type="date" name="finalize-ideas"> 
+                            </li> 
+                            <li>Vote for next meeting 
+                                <input type="radio" name="day" value="Friday" > Friday, Oct 8
+                                <input type="radio" name="day" value="Saturday"> Saturday, Oct 9
+                                <input type="radio" name="day" value="Sunday"> Sunday, Oct 10
+                            </li>
+                            <li>What time? 
+                                <input type="checkbox" name="day" value="11AM" > 11 AM
+                                <input type="checkbox" name="day" value="3PM"> 3 PM
+                                <input type="checkbox" name="day" value="7PM"> 7 PM
+                            </li>
+
+                                
+
+                        </ul>
+                    <li> Share contact 
+                        <ul>
+                            <li>Discord Username
+                                <input type="text" name="username"> 
+                                <button name="submit">
+                                    <strong>Submit</strong> now!
+                                </button>
+                            </li>
+                        </ul>
+                    </li>     
+                </ol>
+
+            </section>
+
+            <section id="#other">
+                <h2>Questions and Other Notes</h2>
+                <p><i>Consult with supervisor if you have any concerns</i></p>
+            </section>
+            <br>
+        </main>
+
+        <details>
+            <summary><strong>Review Questions: What must we do before next meeting?</strong></summary>
+            Listen to class recording
+        </details>
+        <br>
+
+        <footer>
+            <p>Team 9</p>
+        </footer>
+        
+    </body>
+</html>
