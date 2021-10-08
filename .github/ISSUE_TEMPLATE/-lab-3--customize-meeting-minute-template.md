@@ -1,11 +1,12 @@
 ---
-name: "[Lab 3] Customize meeting minute template"
-about: Customize meeting minute (webpage) with HTML and CSS
-title: ''
-labels: css
+name: "CSE-110 LAB TODO LIST"
+about: Tasks needed to be done for a Lab 
+title: 'CSE-110 TODO LIST'
+labels: css, agile
 assignees: StefanieDao
 
 ---
 
-1. General CSS Elements
-2. CSS Selectors
+1. Set-Up
+2. Lab To-do
+3. Submission
