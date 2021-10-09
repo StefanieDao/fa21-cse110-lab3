@@ -4,16 +4,29 @@
         <meta charset="utf-8">
         <title>Project 1: Building a Webpage</title>
         <link rel="icon" type="image/png" href="fav.png">
+        <link rel="stylesheet" href="mystyle.css" >
+        <link rel="stylesheet" media="screen and (max-device-width: 799px)" href="mystyle.css" />
+        <style>
+            header {
+                background-color: #76947e;
+                
+            }                
+
+        </style>
     </head>
     <body>
-        <header>
+
+        <!-- Header -->
+
+        <header class="header">
+            
             <h1>Project 1: Building a Webpage</h1>
             <ul>
-                <li><b>Location:</b> Garren Auditorium (UCSD)</li>
-                <li><b>Date:</b> October 1, 2021 </li>
-                <li><b>Time:</b> 7 PM - 9 PM</li>
+                <li style="color: #8f6310ee";> <b> Location:</b> Garren Auditorium (UCSD)</li>
+                <li style="color: #8f6310ee";><b>Date:</b> October 1, 2021 </li>
+                <li style="color: #8f6310ee";><b>Time:</b> 7 PM - 9 PM</li>
             </ul>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li><a href="#attendance">Attendace</a></li>
                     <li><a href="#agenda">Agenda Items</a></li>
@@ -23,7 +36,10 @@
             </nav>
         </header>
 
-        <main>
+
+        <!-- Main -->
+
+        <main class="main">
             <section id="attendance">
                 <h2> Attendance</h2>
                 <p> Anna, Sebastian, Roxanne, Stefanie, Jaylynn</p>
@@ -31,104 +47,111 @@
             
             <section id="agenda">
                 <h2>Agenda Items</h2>
-                <ol>
-                    <li>Brainstorm ideas for the webpage</li>
-                    <li>Go over <span class="important-material">design notes</span> 
-                        and <span class="important-material">lecture video</span>
-                    </li>
-                </ol>
+                <section class="to-do">
+                    <ol>
+                        <li>Brainstorm ideas for the webpage</li>
+                        <li>Go over <span class="important-material">design notes</span> 
+                            and <span class="important-material">lecture video</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="media">
                     <img src="design-web.jpeg" width="400" height="315"
                         alt="Plan-Design-Build"
                         title="A flow chart of the process of designing a website">
-
+            
                     <video controls width="400" height="315">
                     <source src="html.mp4" 
                             type="video/mp4">
-
                         Sorry, your browser doesn't support embedded videos.
                     </video>
+                </section>   
             </section>
 
-            <section id="action">
-                <h2>Action Items</h2>
-                <div class="action-all">
+            <section id="action" class="main-action">
+                <h2 class="action-header">Action Items</h2>
+                <section class="action-all">
                     <h3>All Members</h3>
-                    <ol>
-                        <li><strong>Listen to class recording to comprehend requirements</strong>
-                            <figure>
-                                <audio
-                                    controls
-                                    src="audio.mp3">
-                                        Your browser does not support the
-                                        <code>audio</code> element.
-                                </audio>
-                            </figure>
-                        </li>
-                        <li>Make a tentative schedule 
-                            <ul>
-                                <li><em>Deadline to finalize idea</em>
-                                    <input type="date" name="finalize-ideas"> 
-                                </li> 
-                                <li><em>Vote for next meeting</em>
-                                    <input type="radio" name="day" value="Friday">Friday, Oct 8
-                                    <input type="radio" name="day" value="Saturday">Saturday, Oct 9
-                                    <input type="radio" name="day" value="Sunday">Sunday, Oct 10
-                                </li>
-                                <li><em>What time should we meet?</em> 
-                                    <input type="checkbox" name="day" value="11AM">11 AM
-                                    <input type="checkbox" name="day" value="3PM">3 PM
-                                    <input type="checkbox" name="day" value="7PM">7 PM
-                                </li>
-                            </ul>
-                        </li>
-        
-                        <li>Share contact
-                            <form action="share-contact" method="get">
-                                <fieldset>
-                                    <label>
-                                    Full Name:
-                                    <input type="text" name="name">
-                                    </label>
+                    <div class="to-do">
+                        <ol>
+                            <li><strong>Listen to class recording to comprehend requirements</strong>
+                                <figure>
+                                    <audio
+                                        controls
+                                        src="audio.mp3">
+                                            Your browser does not support the
+                                            <code>audio</code> element.
+                                    </audio>
+                                </figure>
+                            </li>
+                            <li>Make a tentative schedule 
+                                <ul>
+                                    <li><em>Deadline to finalize idea</em>
+                                        <input type="date" name="finalize-ideas"> 
+                                    </li> 
+                                    <li><em>Vote for next meeting:</em>
+                                        <input type="radio" name="day" value="Friday">Friday, Oct 8
+                                        <input type="radio" name="day" value="Saturday">Saturday, Oct 9
+                                        <input type="radio" name="day" value="Sunday">Sunday, Oct 10
+                                    </li>
+                                    <li><em>What time should we meet?</em> 
+                                        <input type="checkbox" name="day" value="11AM">11 AM
+                                        <input type="checkbox" name="day" value="3PM">3 PM
+                                        <input type="checkbox" name="day" value="7PM">7 PM
+                                    </li>
+                                </ul>
+                            </li>
+            
+                            <li>Share contact
+                                <form action="share-contact" method="get">
+                                    <fieldset class="contact-sharing">
+                                        <label>
+                                        Full Name:
+                                        <input type="text" name="name">
+                                        </label>
 
-                                    <label>
-                                        DOB:
-                                        <input type="date" name="dob">
-                                    </label>
+                                        <label>
+                                            DOB:
+                                            <input type="date" name="dob">
+                                        </label>
 
-                                    <label>
-                                        Email:
-                                        <input type="text" name="email">
-                                    </label>
+                                        <label>
+                                            Email:
+                                            <input type="text" name="email">
+                                        </label>
 
-                                    <label>
-                                        Phone:
-                                        <input type="tel" name="phone">
-                                    </label>
-                                    
-                                    <label>
-                                        Facebook:
-                                        <input type="text" name="facebook">
-                                    </label>
-                                    
-                                    <label>
-                                        Role:
-                                        <select name="roles" required>
-                                            <option value="">--Please choose an option--</option>
-                                            <option value="back-end">Back-end</option>
-                                            <option value="front-end">Front-end</option>
-                                            <option value="ui-ux">UI/UX Designer</option>
-                                        </select>
-                                    </label>
-                                </fieldset>
+                                        <label>
+                                            Phone:
+                                            <input type="tel" name="phone">
+                                        </label>
+                                        
+                                        <label>
+                                            Facebook:
+                                            <input type="text" name="facebook">
+                                        </label>
+                                        
+                                        <label>
+                                            Role:
+                                            <select name="roles" required>
+                                                <option value="">--Please choose an option--</option>
+                                                <option value="back-end">Back-end</option>
+                                                <option value="front-end">Front-end</option>
+                                                <option value="ui-ux">UI/UX Designer</option>
+                                            </select>
+                                        </label>
+                                    </fieldset>
 
-                                <button name="submit" type="button">Submit</button>
+                                    <fieldset class="contact-action">
+                                        <button class="btn" name="submit" type="button">Submit</button>
+                                    </fieldset>
+                                </form>
+                            </li>     
+                        </ol>
+                    </div>
+                </section>
 
-                            </form>
-                        </li>     
-                    </ol>
-                </div>
-
-                <div class="action-designer">
+                <section class="action-designer">
                     <h3>UI/UX Designers</h3>
                     <label>
                         Choose a theme color:
@@ -142,19 +165,17 @@
                         <option value="Black">
                         <option value="Rose">
                     </datalist>
-                </div>
-                
-
-
+                </section>
+            
             </section>
         
-            <div class="additional-notes">
+            <section class="additional-notes">
                 <section id="other">
                     <h2>Questions and Other Notes</h2>
                         <p><i>Consult with supervisor if you have any concerns</i></p>
-                        <textarea name="comment">Any comments or questions?</textarea>
+                        <textarea class="comment">Any comments or questions?</textarea>
                 </section>
-            </div>
+            </section>
         </main>
 
         <hr>
@@ -166,7 +187,9 @@
 
         <hr>
 
-        <footer>
+    <!-- Footer -->
+
+        <footer class="footer">
             <p>
                 <b>SWE Summer 2022</b><br> 
                 <i>Team Mercedes (Supervisor: Robert Downey)</i>
